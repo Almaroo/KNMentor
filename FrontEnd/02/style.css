@@ -1,0 +1,227 @@
+/*Initialize + variables*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg-color: #3ece3e;
+  --primary-bg-color-hover: #3e833e;
+  --primary-text-color: #f4f4f4;
+  --secondary-bg-color: #f4f4f4;
+  --secondary-bg-color-hover: #a8a8a8;
+  --secondary-text-color: #6e6e6e;
+  --dark-bg-color: #333;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Utilities*/
+
+.active {
+  color: var(--primary-bg-color);
+}
+
+.btn {
+  padding: 1.5rem 2.5rem;
+  border-radius: 25px;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btn.primary:hover {
+  transition: 0.5s;
+  background: var(--primary-bg-color-hover);
+}
+.btn.secondary:hover {
+  transition: 0.5s;
+  background: var(--secondary-bg-color-hover);
+}
+
+.primary {
+  background: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.secondary {
+  background: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+}
+
+.dark {
+  background: var(--dark-bg-color);
+  color: var(--primary-text-color);
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 3.5rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+.px-4 {
+  padding: 0 3.5rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 3.5rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.mx-4 {
+  margin: 0 3.5rem;
+}
+
+.text-xlg {
+  font-size: 10rem;
+}
+
+.text-emphasis {
+  font-size: 3rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/*Header*/
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  align-items: center;
+  height: 7vh;
+  border-bottom: solid 1px var(--primary-text-color);
+  background: transparent;
+  color: var(--primary-text-color);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.logo {
+  letter-spacing: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu-item {
+  font-size: 1.5rem;
+  display: inline;
+  padding: 0 2rem;
+  font-weight: 700;
+  text-shadow: var(--dark-bg-color) 1px 1px;
+  cursor: pointer;
+}
+
+.menu-item {
+  font-size: 1.5rem;
+  display: inline;
+  padding: 0 2rem;
+  font-weight: 700;
+  text-shadow: var(--dark-bg-color) 1px 1px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  transition: 0.5s;
+  color: #a8a8a8;
+}
+
+/*Landing page*/
+.landing-page {
+  height: 100vh;
+  background: #333 url("./res/img/showcase.jpg") no-repeat center center/cover;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-top: -7vh;
+}
+
+.landing-page-caption {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-text-color);
+  text-shadow: var(--dark-bg-color) 2px 2px;
+}
+
+/*Boxes*/
+.box {
+  font-size: 2rem;
+  padding: 7rem 0;
+}
+
+.box-text {
+  padding: 0 5rem;
+}
+
+.img-rounded {
+  width: 40%;
+  padding: 0 5rem;
+  border-radius: 50%;
+}
