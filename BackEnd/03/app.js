@@ -5,7 +5,7 @@ const getData = async () => {
   return data;
 };
 
-const kompresja = async () => {
+const liczbyPierwsze = async () => {
   const input = await getData();
 
   input.split("\n").forEach(row => {
@@ -24,4 +24,4 @@ const isPrime = number => {
   else return true;
 };
 
-kompresja();
+liczbyPierwsze();
