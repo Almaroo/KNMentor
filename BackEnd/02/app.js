@@ -14,10 +14,12 @@ const kompresja = async () => {
   const rows = input.split("\n").map(row => row);
   rows.forEach(row => {
     console.log(row);
-    var charArr = [...row];
+    const charArr = [...row].filter(Boolean); //Zrobienie tablicy znaków ze stringa
+    //Absolutnie nie mam pojecia dlaczego w tablicy zostaje "" <- null
     prevChar = charArr[0];
-    console.log(charArr);
+
     charArr.forEach(char => {
+      console.log(char);
       if (char === prevChar) {
         counter++;
       } else {
@@ -27,6 +29,10 @@ const kompresja = async () => {
       }
       prevChar = char;
     });
+
+    compressed += prevChar;
+    compressed += counter;
+
     console.log(compressed);
     compressed = "";
     counter = 0;

@@ -5,7 +5,7 @@ const getData = async () => {
   return data;
 };
 
-const liczbyPierwsze = async () => {
+const histogram = async () => {
   const input = await getData();
 
   //Init dictionary
@@ -14,10 +14,8 @@ const liczbyPierwsze = async () => {
   for (var i = -10; i < 11; i++) {
     dict[i] = 0;
   }
-  console.log(dict);
   input.split("\n").forEach(row => {
     var number = Number(row);
-    console.log(number);
 
     //Najbardziej jajcarski switch jakiego w życiu widziałem
     switch (true) {
@@ -66,4 +64,4 @@ const createHistogramRow = (number, apperances) => {
   return histogramRow;
 };
 
-liczbyPierwsze();
+histogram();
